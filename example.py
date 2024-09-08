@@ -26,7 +26,7 @@ for index, row in df.iterrows():
 
     # Split essay into lines
     for line in essay:
-        lines.extend(noisocr.sliding_window_with_hyphenization(line))
+        lines.extend(noisocr.sliding_window_with_hyphenation(line))
 
     for index2, prompt in enumerate(lines):
         # Skip short prompts

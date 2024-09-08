@@ -76,13 +76,13 @@ def simulate_errors(text, interactions=3, seed=None):
 
     return text
 
-def sliding_window_with_hyphenization(text, window_size=80, language='pt_BR'):
+def sliding_window_with_hyphenation(text, window_size=80, language='pt_BR'):
     """
     Slide a window over a text and hyphenize the words.
 
     :param text: The text to be split.
     :param window_size: The size of the window.
-    :param language: The language for hyphenization.
+    :param language: The language for hyphenation.
 
     :return: A list of windows.
     """

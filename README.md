@@ -2,11 +2,17 @@
 
 Tools to simulate post-OCR noisy texts.
 
-**Tools:**
+**Features:**
 - Sliding window;
-- Sliding window with hyphenization;
+- Sliding window with hyphenation;
 - Simulate text errors;
 - Simulate text annotations.
+
+
+### Install
+```sh
+pip install noisocr
+```
 
 #### Sliding window:
 ```py
@@ -26,7 +32,7 @@ windows = noisocr.sliding_window(text, max_window_size)
 # ]
 ```
 
-#### Sliding window with hyphenization:
+#### Sliding window with hyphenation:
 * See the package https://pypi.org/project/PyHyphen to see all supported languages.
 
 ```py
