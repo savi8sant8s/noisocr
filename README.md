@@ -41,7 +41,7 @@ import noisocr
 text = "Lorem Ipsum is simply dummy...type specimen book."
 max_window_size = 50
 
-windows = noisocr.sliding_window(text, max_window_size)
+windows = noisocr.sliding_window_with_hyphenation(text, max_window_size, 'en_US')
 
 # Output:
 # [
