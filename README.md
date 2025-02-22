@@ -74,10 +74,10 @@ text_with_errors = noisocr.simulate_errors(text, 5)
 import noisocr
 
 text = "Hello world."
-text_with_annotation = noisocr.simulate_annotation(text, probability=0.5)
+text_with_annotation = noisocr.simulate_annotation(text, noisocr.annotations, probability=0.5)
 # Output: Hello, $$--xxx--$$
-text_with_annotation = noisocr.simulate_annotation(text, probability=0.5)
+text_with_annotation = noisocr.simulate_annotation(text, noisocr.annotations, probability=0.5)
 # Output: Hello, ##--world!--##
-text_with_annotation = noisocr.simulate_annotation(text, 0.01)
+text_with_annotation = noisocr.simulate_annotation(text, noisocr.annotations, 0.01)
 # Output: Hello world.
 ```
